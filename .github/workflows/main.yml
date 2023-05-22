@@ -1,0 +1,21 @@
+name: Badge Workflow
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Run tests
+      run: |
+        # Add your test commands here
+
+    - name: Generate badge
+      run: |
+        # Add commands to generate the badge
